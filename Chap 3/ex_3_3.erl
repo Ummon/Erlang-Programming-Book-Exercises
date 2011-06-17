@@ -1,26 +1,6 @@
--module(ex_3).
+-module(ex_3_3).
 -compile(export_all).
 -author("Greg Burri <greg.burri@gmail.com>").
-
-% Ex. 3-1. Page 82.
-
-sum(N) when N < 1 -> throw("The given number must be positive");
-sum(1) -> 1;
-sum(N) -> N + sum(N-1).
-
-sum(N, M) when N > M -> throw("First argument must be lesser or equal to the second");
-sum(N, N) -> N;
-sum(N, M) -> N + sum(N+1, M).
-
-
-% Ex. 3-2. Page 83.
-
-create(N) -> lists:reverse(reverse_create(N)).
-
-reverse_create(N) when N < 1 -> throw("The given number must be positive");
-reverse_create(1) -> [1];
-reverse_create(N) -> [N | reverse_create(N-1)].
-
 
 % Ex. 3-3. Page 83.
 
