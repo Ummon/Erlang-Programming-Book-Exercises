@@ -1,0 +1,3 @@
+h1. Erlang Programming Book - Exercises
+
+This repository contains some resolved exercises from the book _Erlang Programming_ from Francesco Cesarini and Simon Thompson edited by O'Reilly.
